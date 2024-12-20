@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set value="Hello from JSTL Core Tags" var="jstlMsg"/>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +15,9 @@
     </div>
     <div class="container">
         <% out.print("Hello from jsp"); %>
+    </div>
+    <div class="container">
+      <c:out value="${jstlMsg}"/>
     </div>
     <div class="container" id="greet"/>  
     <div class="container">
